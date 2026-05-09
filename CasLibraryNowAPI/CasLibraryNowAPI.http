@@ -1,0 +1,6 @@
+@CasLibraryNowAPI_HostAddress = http://localhost:5262
+
+GET {{CasLibraryNowAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
