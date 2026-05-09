@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ..
 RUN dotnet restore "CasLibraryNowAPI/CasLibraryNowAPI.csproj"
-RUN dotnet publish "CasLibraryNowAPI/CasLibraryNowAPI.csproj" -c Release -o /app
+Run dotnet publish "CasLibraryNowAPI/CasLibraryNowAPI.csproj" -c Release -o /app
 
 FROM base AS final
 WORKDIR /app
