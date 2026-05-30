@@ -1,0 +1,40 @@
+@CasLibraryNowAPI_HostAddress = http://localhost:5000
+
+GET {{CasLibraryNowAPI_HostAddress}}/api/v1/books
+Accept: application/json
+
+###
+
+GET {{CasLibraryNowAPI_HostAddress}}/api/v1/books/1
+Accept: application/json
+
+###
+
+POST {{CasLibraryNowAPI_HostAddress}}/api/v1/books
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "genre": "Classic Fiction",
+  "available": true,
+  "publishedYear": 1925
+}
+
+###
+
+PUT {{CasLibraryNowAPI_HostAddress}}/api/v1/books/1
+Content-Type: application/json
+
+{
+  "title": "Dune Messiah",
+  "author": "Frank Herbert",
+  "genre": "Science Fiction And Fantasy",
+  "available": false,
+  "publishedYear": 1969
+}
+
+###
+
+DELETE {{CasLibraryNowAPI_HostAddress}}/api/v1/books/1
+Accept: application/json
